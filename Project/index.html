@@ -1,32 +1,40 @@
-<!DOCTYPE html>
-<html ng-app="app">
+  <!DOCTYPE html>
+  <html ng-app="app">
 
-  <head>
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- este  es  css -->
-      <link rel="stylesheet" href="css/material.min.css">
+    <head>
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- este  es  css -->
+        <link rel="stylesheet" href="css/material.min.css">
 
- <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
-    
-    <!-- js-->
-      <script src="js/material.min.js"></script>
-<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.min.js"></script>
-    <script src="script.js"></script>
+   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+      
+      <!-- js-->
+        <script src="js/material.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.min.js"></script>
+      <script src="script.js"></script>
+     <script src="js/angular-ui-router.js"></script>
+
+      <title>nose</title>
+    </head>
+
+    <body ng-controller="AlumnosController">
+      <h1>Cuaderno Alumnos</h1>
 
 
-    <title>nose</title>
-  </head>
+  <!-- <a ui-sref="main">ir  al  main</a> <br>
+     <a ui-sref="usuarios">usuarios</a><br>
+      <a ui-sref="elbio">nombre</a> 
+    <div ui-view></div>
+       -->
 
-  <body ng-controller="AlumnosController">
-    <h1>Cuaderno Alumnos</h1>
 
-    <div>
-    	<div ng-repeat="alumno in alumnos">
-    		<div>{{alumno.nombre}}-{{alumno.curso}}</div>
-    		<span>{{alumno.telefono}}</span>
-    	</div>
-    </div>
-  </body>
+      <div>
+      	<div ng-repeat="alumno in alumnos">
+      		<div>{{alumno.nombre}}-{{alumno.curso}}</div>
+      		<span>{{alumno.telefono}}</span>
+      	</div>
+      </div>
+    </body>
 
-</html>
+  </html>
