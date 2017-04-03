@@ -1,3 +1,4 @@
+<<<<<<< HEAD
   <!DOCTYPE html>
   <html ng-app="app">
 
@@ -38,3 +39,69 @@
     </body>
 
   </html>
+=======
+<!DOCTYPE html>
+<html ng-app="app">
+
+  <head>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- este  es  css -->
+      <link rel="stylesheet" href="css/material.min.css">
+
+ <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+    
+    <!-- js-->
+      <script src="js/material.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.min.js"></script>
+    <script src="script.js"></script>
+
+
+    <title>nose</title>
+  </head>
+
+  <body ng-controller="AlumnosController">
+    <!-- Always shows a header, even in smaller screens. -->
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <header class="mdl-layout__header">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title">Title</span>
+      <!-- Add spacer, to align navigation to the right -->
+      <div class="mdl-layout-spacer"></div>
+      <!-- Navigation. We hide it in small screens. -->
+      <nav class="mdl-navigation mdl-layout--large-screen-only">
+        <a class="mdl-navigation__link" href="">Link</a>
+        <a class="mdl-navigation__link" href="">Link</a>
+        <a class="mdl-navigation__link" href="">Link</a>
+        <a class="mdl-navigation__link" href="">Link</a>
+      </nav>
+    </div>
+  </header>
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout-title">Title</span>
+    <nav class="mdl-navigation">
+      <a class="mdl-navigation__link" href="">Link</a>
+      <a class="mdl-navigation__link" href="">Link</a>
+      <a class="mdl-navigation__link" href="">Link</a>
+      <a class="mdl-navigation__link" href="">Link</a>
+    </nav>
+  </div>
+  <main class="mdl-layout__content">
+      <div class="page-content"> 
+        <h1>Cuaderno Alumnos</h1>
+
+        <div>
+        <div ng-repeat="alumno in alumnos">
+          <div>{{alumno.nombre}}-{{alumno.curso}}</div>
+          <span>{{alumno.telefono}}</span>
+        </div>
+      </div>
+  </div>
+  </main>
+</div>
+   
+  </body>
+
+</html>
+>>>>>>> 2a57aa26a178e7dc9020587a55ef0a1105fb53e7
