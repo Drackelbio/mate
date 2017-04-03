@@ -12,7 +12,7 @@ angular.module ('app', [
 	    })
 			.state('usuarios', {
 			url:'/users',
-			template: '<h2>modificacion ddddd'
+			template: '<h2>modificacion ddddd </h2> '
 		}) 
 
 			.state('elbio', {
