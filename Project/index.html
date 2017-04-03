@@ -49,14 +49,13 @@
   </div>
   <main class="mdl-layout__content">
       <div class="page-content"> 
-        <h1>Cuaderno Alumnos</h1>
-
-        <div>
-        <div ng-repeat="alumno in alumnos">
-          <div>{{alumno.nombre}}-{{alumno.curso}}</div>
-          <span>{{alumno.telefono}}</span>
-        </div>
-      </div>
+        
+<a ui-sref="main">ir  al  main</a> <br>
+   <a ui-sref="usuarios">usuarios</a><br>
+    <a ui-sref="elbio">nombre</a> 
+  <div ui-view></div>
+  
+        
   </div>
   </main>
 </div>
