@@ -13,14 +13,17 @@
     <!-- js-->
       <script src="js/material.min.js"></script>
 <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.min.js"></script>
-    <script src="script.js"></script>
+    <script src="app/script.js"></script>
+    
+    
     <script src="js/angular-ui-router.js"></script>
+ 
 
 
     <title>nose</title>
   </head>
 
-  <body ng-controller="AlumnosController">
+  <body >
     <!-- Always shows a header, even in smaller screens. -->
 <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
   <header class="mdl-layout__header">
@@ -31,29 +34,27 @@
       <div class="mdl-layout-spacer"></div>
       <!-- Navigation. We hide it in small screens. -->
       <nav class="mdl-navigation mdl-layout--large-screen-only">
-        <a class="mdl-navigation__link" href="">Link</a>
-        <a class="mdl-navigation__link" href="">Link</a>
-        <a class="mdl-navigation__link" href="">Link</a>
-        <a class="mdl-navigation__link" href="">Link</a>
+        <a class="mdl-navigation__link" href="">Linksss</a>
+        
       </nav>
     </div>
   </header>
   <div class="mdl-layout__drawer">
     <span class="mdl-layout-title">Title</span>
     <nav class="mdl-navigation">
-      <a class="mdl-navigation__link" href="">Link</a>
-      <a class="mdl-navigation__link" href="">Link</a>
-      <a class="mdl-navigation__link" href="">Link</a>
-      <a class="mdl-navigation__link" href="">Link</a>
+      <a ui-sref="main"class="mdl-navigation__link">MENU</a>
+       <a ui-sref="usuarios"class="mdl-navigation__link">USUARIOS</a>
+       <a ui-sref="elbio"class="mdl-navigation__link">ELBIO</a>
+
     </nav>
   </div>
   <main class="mdl-layout__content">
       <div class="page-content"> 
+         <div ui-view></div>
         
-<a ui-sref="main">ir  al  main</a> <br>
-   <a ui-sref="usuarios">usuarios</a><br>
-    <a ui-sref="elbio">nombre</a> 
-  <div ui-view></div>
+
+   
+
   
         
   </div>
